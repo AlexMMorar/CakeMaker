@@ -1,23 +1,36 @@
 #include "MenuRepository.h"
+#include "Tiramisu.h"
 
-void MenuRepository::loadMenu()
-{
-}
 
 MenuRepository::MenuRepository()
 {
+	loadMenu();
+}
+
+void MenuRepository::loadMenu()
+{
+	products.push_back(new Tiramisu(1, "Tiramisu", "Olanda"));
 }
 
 MenuRepository::MenuRepository(std::string pathToFile)
 {
+
 }
 
-IRecipe* MenuRepository::getMenu()
+std::vector<IRecipe*> MenuRepository::getMenu()
 {
-	return nullptr;
+	return products;
 }
 
 IRecipe* MenuRepository::getOrder(int id)
 {
-	return nullptr;
+	IRecipe* rep = nullptr;
+
+	for (int i = 0; i < products.size(); i++)
+	{
+		if (products.at(i)->getId() == id)
+			rep = products.at(i);
+	}
+
+	return rep;
 }

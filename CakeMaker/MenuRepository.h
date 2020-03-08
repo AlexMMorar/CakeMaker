@@ -1,19 +1,18 @@
 #pragma once
 #include <string>
 #include "IRecipe.h"
-#include <array>
+#include <vector>
 
 class MenuRepository {
 
 private:
 	std::string pathToFile;
+	std::vector<IRecipe*> products;
 
 	void loadMenu();
 public:
 	MenuRepository();
 	MenuRepository(std::string pathToFile);
-	IRecipe* getMenu();
+	std::vector<IRecipe*> getMenu();
 	IRecipe* getOrder(int id);
-
-	
 };

@@ -1,9 +1,2 @@
-﻿  CakeMaker.cpp
-  Command.cpp
-  CommandPanel.cpp
-  CommandRepository.cpp
-  CommandTaker.cpp
-  Main.cpp
-  MenuRepository.cpp
-  Generating Code...
+﻿  Main.cpp
   CakeMaker.vcxproj -> D:\Work\CakeMaker\CakeMaker\Debug\CakeMaker.exe

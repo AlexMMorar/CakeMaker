@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Cakes">
+      <UniqueIdentifier>{003f3992-6376-49cd-aec9-f8f2e9a52fb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Cakes">
+      <UniqueIdentifier>{aa30bd2e-536f-4c0f-8ff3-e2b26cf928cd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -42,6 +48,9 @@
     <ClCompile Include="Cake.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Tiramisu.cpp">
+      <Filter>Source Files\Cakes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CommandPanel.h">
@@ -70,6 +79,9 @@
     </ClInclude>
     <ClInclude Include="IRecipe.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiramisu.h">
+      <Filter>Header Files\Cakes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
